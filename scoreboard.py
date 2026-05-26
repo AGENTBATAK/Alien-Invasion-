@@ -58,8 +58,6 @@ class Scoreboard:
             ship.rect.x = 10 + ship_number * 50
             ship.rect.y = 10
             self.ships.add(ship)
-    
-        self.ships.add(ship)
     def show_score(self):
         self.screen.blit(self.score_image, self.score_rect)
         self.screen.blit(self.high_score_image, self.high_score_rect)
