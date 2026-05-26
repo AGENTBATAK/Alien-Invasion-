@@ -1,20 +1,23 @@
-import pygame,tela
-
-class Ship:
+import pygame
+from pygame.sprite import Sprite
+class Ship(Sprite):
     def __init__(self,ai_game):
+        super().__init__()
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
         #Load image
         
-        self.image = pygame.image.load('D:\Alien Invasion\gam_images\Main ship.bmp')
-        self.image2=pygame.transform.scale(self.image,(35,35)) # Scale size of the ship
+        self.image = pygame.image.load('D:\Alien Invasion\gam_images\Ship.bmp')
+        self.image2=pygame.transform.scale(self.image,(65,65)) # Scale size of the ship
         self.rect = self.image2.get_rect()
         
         self.rect.midbottom = self.screen_rect.midbottom
         
     def blitme(self):
         self.screen.blit(self.image2, self.rect)
-   
+    def center_ship(self):
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
         
         
         
