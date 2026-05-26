@@ -322,4 +322,4 @@ The game can be further improved with better graphics, animations, sounds, and a
 
 # Author
 
-Developed by AGENTBATAK
+Developed by SWASTIK KATYAYAN (AGENTBATAK)
